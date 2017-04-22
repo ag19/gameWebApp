@@ -1,6 +1,6 @@
 # website
 Frontend for a basic game web app
-@authors:
+@authors:  
 Aman  
 Manish  
 Jayant  
