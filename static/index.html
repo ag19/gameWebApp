@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Game Application! </title>
+    <!-- CSS -->
+    <!-- load bootstrap and our stylesheet -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/\
+css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+    <!-- JS -->
+    <!-- load angular and our custom application -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller/mainCtrl.js"></script>
+</head>
+
+<body class="container" ng-app="gameApp" ng-controller="mainCtrl">
+    <h2> main heading {{message}}</h2>
+    <input ng-model="msg">{{msg}}
+</body>
+
+</html>
