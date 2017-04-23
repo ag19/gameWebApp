@@ -4,12 +4,12 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/');
 
-    // $stateProvider
-    //     .state('home', {
-    //         url: '/',
-    //         templateUrl: './templates/home.html',
-    //         controller: 'homeCtrl',
-    //         css: './css/home.css'
-    //     })
+    $stateProvider
+        .state('home', {
+            url: '/',
+            templateUrl: './static/templates/home.html',
+            controller: 'mainCtrl',
+            //css: './css/home.css'
+        })
 
 });

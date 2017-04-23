@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="gameApp" ng-controller="mainCtrl">
+<html lang="en" ng-app="gameApp" >
 
 <head>
+    <base href="/gameWebApp/">
     <meta charset="UTF-8">
     <title> Game Application! </title>
     <!-- CSS -->
@@ -15,14 +16,12 @@ css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
     <script src="https://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="static/js/app.js"></script>
+    <script src="static/js/config.js"></script>
     <script src="static/js/controller/mainCtrl.js"></script>
 </head>
 
 <body class="">
-    <header ng-include="header">
-    </header>
-    <h2> main heading {{message}}</h2>
-    <input ng-model="msg">{{msg}}
-</body>https://github.com/ag19/gameWebApp
+     <div ui-view></div>
+</body>
 
 </html>
