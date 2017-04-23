@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/\
 css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
 
     <!-- JS -->
     <!-- load angular and our custom application -->
@@ -19,10 +20,59 @@ css/bootstrap.min.css">
     <script src="static/js/app.js"></script>
     <script src="static/js/config.js"></script>
     <script src="static/js/controller/mainCtrl.js"></script>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 300px;
+            margin: auto;
+            border-radius: 5%;
+        }
+        
+        .card img {
+            width: 100%;
+        }
+        
+        .card-block {
+            width: 100%;
+            padding: 10px;
+        }
+        
+        .discount,
+        .price {
+            width: 49%;
+        }
+        
+        .card-content {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body class="">
     <div ui-view></div>
+    <!--<div class="card container" style="height:auto;width:auto;">
+        <img class="card-img-top" style="height:150px;width:287px;" src="static/images/cardsample.jpg" alt="Card image cap">
+        <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>-->
+
+    <div class="card">
+        <img class="card-img-top" src="static/images/cardsample.jpg" alt="Card image cap">
+        <div class="card-block">
+            <h4 class="card-title text-center">Game Name</h4>
+            <div class="card-content">
+                <div class="text-left discount inline-block">
+                    discount upto x%
+                </div>
+                <div class="text-right price inline-block">
+                    <h4>₹0000</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
