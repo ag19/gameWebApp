@@ -1,1 +1,1 @@
-var app = angular.module('gameApp', []);
+var app = angular.module('gameApp', ['ui.router', 'angularCSS']);
