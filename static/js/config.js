@@ -9,7 +9,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/',
             templateUrl: './static/templates/home.html',
             controller: 'mainCtrl',
-            //css: './css/home.css'
+            css: './static/css/home.css'
         })
 
 });
