@@ -1,10 +1,18 @@
 <div ng-controller="mainCtrl">
-<header></header>
+    <header></header>
+
+    <br>
+    <div class="home_carousal" uib-carousel active="active" interval="myInterval">
+        <div uib-slide ng-repeat="slide in slides" index=$index>
+            <img class="carousal_pics" ng-src="{{slide.image}}" style="margin:auto;">
+        </div>
+    </div>
 
 
+<br><br><br><br><br><br>
 
 
- <div class="card">
+    <div class="card">
         <img class="card-img-top" src="static/images/cardsample.jpg" alt="Card image cap">
         <div class="card-block">
             <h4 class="card-title text-center">Game Name</h4>

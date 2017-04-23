@@ -22,3 +22,16 @@
         .card-content {
             width: 100%;
         }
+
+
+.carousal_pics {
+    max-height: 600px;
+/*    width: 80%;*/
+    clip: inherit;
+}
+
+.home_carousal {
+    width: 50%;
+/*    max-height: 600px;*/
+    
+}
