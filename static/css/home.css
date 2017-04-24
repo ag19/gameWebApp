@@ -26,12 +26,12 @@
 
 .carousal_pics {
     max-height: 600px;
-/*    width: 80%;*/
+    width: 100%;
     clip: inherit;
 }
 
 .home_carousal {
-    width: 50%;
+    width: 100%;
 /*    max-height: 600px;*/
     
 }
