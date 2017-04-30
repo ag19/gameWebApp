@@ -1,35 +1,9 @@
-/*.footer-fullWidth .footer {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    padding: 40px;
+.footer-column-heading{
+	color: #545454;
+	font-size: 15px;
+	font-weight: 315;
+	margin-bottom: 30px;
 }
-
-.footer-fullWidth .footer .footer-left {
-    width: 30%;
-}
-
-.footer-fullWidth .footer .cities {
-    width: 20%;
-    padding-left: 60px;
-}
-
-.footer-fullWidth .footer .footer-heading {
-    margin-bottom: 20px;
-    font-color: #545454;
-    font-weight: 400;
-    font-size: 10px;
-}
-
-.footer-fullWidth {
-  	box-shadow: 0 2px 20px rgba(0,0,0,.2);
-    background: transparent;
-    background: hsla(0,0%,100%,.98);
-    background-color: #fbfbfb;  
-}*/
-
-
-
 
 
 .footer-alert-container{
@@ -54,9 +28,30 @@
     font-size: 13px;
     font-weight: 200;
 }
+ .footer-column-contents{
+ 	font-weight: 200;
+ 	margin-top: 5px;
+ 	font-size: 13px;
+ }
 
 .hfix{
 height: 30px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #545454;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #545454;
+}
+
+a:hover {
+	text-decoration: none;
+
+    color: #ffbb58;
 }
 
 .join-us-button {
@@ -78,8 +73,6 @@ height: 30px;
   transform: translateY(0.5px);
 }
 
-
-/*headout 1em = 10px = our 0.7em*/
 .footer-alert-container .left-info-container .info-header {
     font-size: 16px;
     font-weight: 500;
@@ -90,7 +83,6 @@ height: 30px;
     padding: 18px 10% 15px 30px;
     width: 50%;
     color: #fff;
-    /*font-family: Graphik;*/
 }
 
 .info-content {
