@@ -9,3 +9,13 @@ app.directive('header', function () {
         }
     }
 });
+app.directive('footer', function () {
+    return {
+        templateUrl: 'static/templates/layout/footer.html',
+        css: {
+            href: 'static/css/footer.css',
+            preload: true
+        }
+    }
+});
+
