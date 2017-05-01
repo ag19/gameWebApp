@@ -1,20 +1,36 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 300px;
-    margin: 5px;
-    border-radius: 5%;
+    width: 240px;
+    margin: 24px;
+    /*border-radius: 5%;*/
 }
 
 .card img {
     width: 100%;
 }
 
-.card-block {
-    width: 100%;
-    padding: 10px;
+.card:hover{
+    cursor: pointer;
 }
 
-.discount,
+.gamename{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.discount{
+    width: 49%;
+    color: #4fc3f7;
+    font-weight: 200;
+}
+
+.card-block {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*padding: 10px;*/
+}
+
 .price {
     width: 49%;
 }
