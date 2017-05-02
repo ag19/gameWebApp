@@ -24,7 +24,7 @@
 	width: 400px;
     border: none;
     padding: 5px 10px;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     font-size: 13px;
     font-weight: 200;
 }
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .join-us-button {
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   background:linear-gradient(107deg,#ffcd83,#ffbb58);
   border: none;
   color: #FFFFFF;
