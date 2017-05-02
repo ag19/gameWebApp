@@ -18,4 +18,22 @@ app.directive('footer', function () {
         }
     }
 });
+app.directive('card', function () {
+    return {
+        templateUrl: 'static/templates/layout/card.html',
+        css: {
+            href: 'static/css/card.css',
+            preload: true
+        }
+    }
+});
+app.directive('card-slider', function () {
+    return {
+        templateUrl: 'static/templates/layout/footer.html',
+        css: {
+            href: 'static/css/footer.css',
+            preload: true
+        }
+    }
+});
 
