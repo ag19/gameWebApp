@@ -4,7 +4,9 @@ app.controller('mainCtrl', ['$scope', '$window', '$document', function($scope, $
     $scope.singleModel = 1;
     $scope.myInterval = 5000;
     $scope.active = 0;
-    $scope.left = 0;
+    var left1 = 0;
+    var left2 = 0;
+    var left3 = 0;
     //    var slides = $scope.slides = [];
 
     $scope.slides = [{
@@ -24,14 +26,32 @@ app.controller('mainCtrl', ['$scope', '$window', '$document', function($scope, $
         }
     ];
 
-    $scope.plusDivs = function(index) {
+    $scope.plusDivs1 = function(index) {
         // $window.alert('at index ' + index);
-        $scope.left += index;
+        left1 += index;
         // console.log($("#card-wrapper"));
     }
 
-    $scope.calcLeft = function() {
-        return $scope.left * 300;
+    $scope.calcLeft1 = function() {
+        return left1 * 300;
+    } 
+    $scope.plusDivs2 = function(index) {
+        // $window.alert('at index ' + index);
+        left2 += index;
+        // console.log($("#card-wrapper"));
+    }
+
+    $scope.calcLeft2 = function() {
+        return left2 * 300;
+    } 
+    $scope.plusDivs3 = function(index) {
+        // $window.alert('at index ' + index);
+        left3 += index;
+        // console.log($("#card-wrapper"));
+    }
+
+    $scope.calcLeft3 = function() {
+        return left3 * 300;
     }
 
 }]);
