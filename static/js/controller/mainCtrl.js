@@ -10,16 +10,16 @@ app.controller('mainCtrl', ['$scope', '$window', '$document', function($scope, $
     //    var slides = $scope.slides = [];
 
     $scope.slides = [{
-            image: 'https://images7.alphacoders.com/386/386016.png'
+            image: 'static/images/img3.jpeg'
         },
         {
-            image: 'https://s.candybanana.com/images/0b17/forza_horizon_2_55.jpg'
+            image: 'static/images/img2.jpeg'
         },
         {
-            image: 'https://media.playstation.com/is/image/SCEA/prey-listing-thumb-01-ps4-us-14jun16?$Icon$'
+            image: 'static/images/img1.jpeg'
         },
         {
-            image: 'https://media.playstation.com/is/image/SCEA/fifa-17-standard-edition-two-column-01-ps4-us-03jun16?$MediaCarousel_Original$'
+            image: 'static/images/img4.jpeg'
         },
         {
             image: 'http://www.dtxgames.com/wp-content/uploads/2016/11/2389681-assassins-creed-4-black-flag-hd-wallpaper1.jpg'
@@ -28,7 +28,8 @@ app.controller('mainCtrl', ['$scope', '$window', '$document', function($scope, $
 
     $scope.plusDivs1 = function(index) {
         // $window.alert('at index ' + index);
-        left1 += index;
+        if(left1 + index >=0)
+            left1 += index;
         // console.log($("#card-wrapper"));
     }
 
@@ -37,6 +38,7 @@ app.controller('mainCtrl', ['$scope', '$window', '$document', function($scope, $
     } 
     $scope.plusDivs2 = function(index) {
         // $window.alert('at index ' + index);
+        if(left2 + index >=0)
         left2 += index;
         // console.log($("#card-wrapper"));
     }
@@ -46,6 +48,7 @@ app.controller('mainCtrl', ['$scope', '$window', '$document', function($scope, $
     } 
     $scope.plusDivs3 = function(index) {
         // $window.alert('at index ' + index);
+        if(left3 + index >=0)
         left3 += index;
         // console.log($("#card-wrapper"));
     }
