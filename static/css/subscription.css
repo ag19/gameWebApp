@@ -1,0 +1,33 @@
+table  {
+  border: 1px solid #555555;
+  border-collapse: collapse;
+  text-align: center;
+  color: #878278 ;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+th{
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 8px;
+  font-weight: 300;
+  color: #ffbb88;
+  font-size: 18px;
+}
+
+button{
+  background-color:#ec1943; 
+  border-radius:0px;
+  color:#FFFFFF
+}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #FFF;
+    text-decoration: none;
+}

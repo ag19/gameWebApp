@@ -11,5 +11,12 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: 'mainCtrl',
             css: './static/css/home.css'
         })
+    // $stateProvider
+    // 	.state('home',{
+    // 		url: '/subscription',
+    // 		templateUrl: './static/templates/subscription.html',
+    // 		controller: 'mainCtrl',
+    // 		css: './static/css/subscription.css'
+    // 	})    
 
 });

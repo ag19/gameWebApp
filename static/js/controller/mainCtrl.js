@@ -9,6 +9,33 @@ app.controller('mainCtrl', ['$scope', '$window', '$document', function($scope, $
     var left3 = 0;
     //    var slides = $scope.slides = [];
 
+    $scope.planSelectionButton = "Select a Plan";
+    $scope.durationSelectionButton = "Duration";
+
+    $scope.planChange = function(name){
+        $scope.planSelectionButton = name;
+    };
+
+    $scope.durationChange = function(name){
+        $scope.durationSelectionButton = name;
+    };
+
+    $scope.subscriptionPlans = [ {name: 'Noobie' , numGames : 1, dvdRent : 30, consoleRent : 'NA' , subsChargeMonth : 295, subsChargeQuarter : 500, subsChargeHalfYear : 600, subsChargeYear : 1000 },
+    {name: 'Rookie', numGames : 2, dvdRent : 40, consoleRent : 'NA' , subsChargeMonth : 295, subsChargeQuarter : 500, subsChargeHalfYear : 600, subsChargeYear : 1000 },
+    {name: 'Expert', numGames : 3, dvdRent : 50, consoleRent : 'NA' , subsChargeMonth : 295, subsChargeQuarter : 500, subsChargeHalfYear : 600, subsChargeYear : 1000 },
+    {name: 'ADv', numGames : 1, dvdRent : 30, consoleRent : 195, subsChargeMonth : 695, subsChargeQuarter : 500, subsChargeHalfYear : 600, subsChargeYear : 1000 },
+    {name: 'Ajnsklnsl', numGames : 2, dvdRent : 40, consoleRent : 195, subsChargeMonth : 695, subsChargeQuarter : 500, subsChargeHalfYear : 600, subsChargeYear : 1000 },
+    {name: 'Isakbdkbi', numGames : 3, dvdRent : 50, consoleRent : 195 , subsChargeMonth : 695, subsChargeQuarter : 500, subsChargeHalfYear : 600, subsChargeYear : 1000 },
+    ];
+
+    $scope.subscriptionPlanDuration = [{duration: 'Monthly'},
+    {duration: 'Quarterly'},
+    {duration: 'Half Yearly'},
+    {duration: 'Yearly'} ];
+    // $scope.subscriptionGrid = { 
+    //     data: 'subscriptionplans',
+    //     jqueryUITheme: true
+    // };
     $scope.slides = [{
             image: 'static/images/img3.jpeg'
         },
@@ -20,9 +47,6 @@ app.controller('mainCtrl', ['$scope', '$window', '$document', function($scope, $
         },
         {
             image: 'static/images/img4.jpeg'
-        },
-        {
-            image: 'http://www.dtxgames.com/wp-content/uploads/2016/11/2389681-assassins-creed-4-black-flag-hd-wallpaper1.jpg'
         }
     ];
 

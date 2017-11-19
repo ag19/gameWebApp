@@ -1,0 +1,62 @@
+<div ng-app="gameApp" ng-controller="mainCtrl">
+	<header></header>
+  <link rel="stylesheet" type="text/css" href="static/css/subscription.css">  
+	<br>
+	<br>
+	<h2 style="padding-left: 6%; font-weight: 300; color: #555555">Subsription Plans</h2>
+    <hr class="core-section-underline" style="width:8% ;margin-left:6% ; border: 1px solid #ffbb88">
+
+  <br>
+  
+    <table align="center">
+      <th>Plan Name</th>
+    	<th>Games at a time</th>
+    	<th>DVD(s) Rent/day</th>
+    	<th>Console Rent/day</th>
+    	<th>Monthly</th>
+    	<th>Quarterly</th>
+    	<th>Half Yearly</th>
+    	<th>Yearly</th>
+    	<tr ng-repeat="plan in subscriptionPlans">
+        <td>{{plan.name}}</td>
+        <td>{{plan.numGames}}</td>
+        <td>{{plan.dvdRent}}</td>
+        <td>{{plan.consoleRent}}</td>
+    		<td>{{plan.subsChargeMonth}}</td>
+    		<td>{{plan.subsChargeQuarter}}</td>
+    		<td>{{plan.subsChargeHalfYear}}</td>
+    		<td>{{plan.subsChargeYear}}</td>
+  		</tr>
+  	</table>
+  	<br> 
+    
+    <!-- <p>Suppose you opted for Advance Plan for a quarter.Now rent of 3 games for a period of 10 days will be INR 500.Console can also be rented @199/day.</p>   -->
+    <div align="center">
+      <div class="btn-group" uib-dropdown keyboard-nav>
+          <button id="simple-btn-keyboard-nav" type="button" class="btn" uib-dropdown-toggle>
+              {{planSelectionButton}}<span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="simple-btn-keyboard-nav">
+                  <li ng-repeat = "plan in subscriptionPlans" role="menuitem"><a href="#" ng-click="planChange(plan.name)">{{plan.name}}</a></li>
+          </ul>
+      </div>
+
+      
+      <div class="btn-group" uib-dropdown keyboard-nav>
+          <button id="simple-btn-keyboard-nav" type="button" class="btn" uib-dropdown-toggle>
+              {{durationSelectionButton}} <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="simple-btn-keyboard-nav">
+                  <li ng-repeat = "subscriptionplanduration in subscriptionPlanDuration" role="menuitem"><a href="#" ng-click="durationChange(subscriptionplanduration.duration) ">{{subscriptionplanduration.duration}}</a></li>
+          </ul>
+      </div>
+
+      <button class="btn">Buy Now</button>
+    </div>  
+
+    <br>
+
+    
+
+  	<footer></footer>
+</div>  	
